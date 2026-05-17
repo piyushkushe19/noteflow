@@ -1,4 +1,4 @@
-# NoteFlow AI — Collaborative AI Notes Workspace
+# 📝NoteFlow AI — Collaborative AI Notes Workspace
 
 A modern, full-stack AI-powered notes workspace. Create notes, organize with tags and categories, generate AI summaries and action items, share publicly, and track your productivity — all in a clean, dark-mode-first interface.
 
