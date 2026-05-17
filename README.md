@@ -32,19 +32,19 @@ A modern, full-stack AI-powered notes workspace. Create notes, organize with tag
 ## 📸 Screenshots
 
 ### Dashboard
-![Dashboard](./screenshots/noteflow-dashboard.png)
+![Dashboard](./screenshots/NoteFlow_Dashboard.png)
 
 ### Create New Note
-![New Note](./screenshots/noteflow-new-note.png)
+![New Note](./screenshots/NoteFlow_NewNote.png)
 
 ### Notes Section
-![Notes](./screenshots/noteflow-notes.png)
+![Notes](./screenshots/NoteFlow_Notes.png)
 
 ### Archive Section
-![Archive](./screenshots/noteflow-archive.png)
+![Archive](./screenshots/NoteFlow_ArchiveSection.png)
 
 ### AI Feature
-![AI Feature](./screenshots/noteflow-ai-feature.png)
+![AI Feature](./screenshots/NoteFlow_AIfeature.png)
 
 ---
 
