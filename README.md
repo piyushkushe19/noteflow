@@ -29,6 +29,24 @@ A modern, full-stack AI-powered notes workspace. Create notes, organize with tag
 | Deployment | Vercel (frontend) + Render (backend) |
 
 ---
+## 📸 Screenshots
+
+### Dashboard
+![Dashboard](./screenshots/noteflow-dashboard.png)
+
+### Create New Note
+![New Note](./screenshots/noteflow-new-note.png)
+
+### Notes Section
+![Notes](./screenshots/noteflow-notes.png)
+
+### Archive Section
+![Archive](./screenshots/noteflow-archive.png)
+
+### AI Feature
+![AI Feature](./screenshots/noteflow-ai-feature.png)
+
+---
 
 ## Project Structure
 
