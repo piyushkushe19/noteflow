@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --primary: 221 83% 53%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --ring: 221 83% 53%;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 222 47% 6%;
+    --foreground: 210 40% 98%;
+    --card: 222 47% 8%;
+    --card-foreground: 210 40% 98%;
+    --border: 217 33% 14%;
+    --input: 217 33% 14%;
+    --primary: 221 83% 60%;
+    --primary-foreground: 222 47% 4%;
+    --secondary: 217 33% 12%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217 33% 12%;
+    --muted-foreground: 215 20% 55%;
+    --accent: 217 33% 14%;
+    --accent-foreground: 210 40% 98%;
+    --ring: 224 76% 62%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  ::selection {
+    @apply bg-primary/20 text-foreground;
+  }
+}
+
+/* TipTap editor styles */
+.ProseMirror {
+  @apply outline-none min-h-[200px];
+}
+.ProseMirror p.is-editor-empty:first-child::before {
+  @apply text-muted-foreground pointer-events-none float-left h-0;
+  content: attr(data-placeholder);
+}
+.ProseMirror h1 { @apply text-3xl font-bold mb-4 mt-6; }
+.ProseMirror h2 { @apply text-2xl font-semibold mb-3 mt-5; }
+.ProseMirror h3 { @apply text-xl font-semibold mb-2 mt-4; }
+.ProseMirror p { @apply mb-3 leading-relaxed; }
+.ProseMirror ul { @apply list-disc pl-6 mb-3 space-y-1; }
+.ProseMirror ol { @apply list-decimal pl-6 mb-3 space-y-1; }
+.ProseMirror blockquote { @apply border-l-4 border-primary/40 pl-4 italic text-muted-foreground my-4; }
+.ProseMirror code { @apply font-mono bg-muted px-1.5 py-0.5 rounded text-sm; }
+.ProseMirror pre { @apply font-mono bg-muted p-4 rounded-lg overflow-x-auto mb-4; }
+.ProseMirror strong { @apply font-semibold; }
+
+/* Skeleton shimmer */
+.skeleton {
+  background: linear-gradient(90deg, hsl(var(--muted)) 25%, hsl(var(--accent)) 50%, hsl(var(--muted)) 75%);
+  background-size: 200% 100%;
+  @apply animate-shimmer rounded;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { @apply bg-transparent; }
+::-webkit-scrollbar-thumb { @apply bg-border rounded-full; }
+::-webkit-scrollbar-thumb:hover { @apply bg-muted-foreground/40; }
