@@ -41,7 +41,7 @@ A modern, full-stack AI-powered notes workspace. Create notes, organize with tag
 ![Notes](./screenshots/NoteFlow_Notes.png)
 
 ### Archive Section
-![Archive](./screenshots/NoteFlow_ArchiveSection.png)
+![Archive](./screenshots/noteflow_ArchiveSection.png)
 
 ### AI Feature
 ![AI Feature](./screenshots/NoteFlow_AIfeature.png)
